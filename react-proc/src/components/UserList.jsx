@@ -11,7 +11,6 @@ const UserList = () => {
     <div>
       {users.map((user)=>(
         <div key={user.id}>
-          {/* <li>{user.id}</li> */}
           <h3>Name:{user.name}</h3>
           <h3>Age:{user.age}</h3>
         </div>

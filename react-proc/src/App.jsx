@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 import MainContent from "./components/MainContent"
 import ProductList from "./components/ProductList"
+import Props from "./components/Props"
 import UserList from "./components/UserList"
 import WelcomeMessage from "./components/WelcomeMessage"
 import Greeting from "./Greeting"
@@ -18,10 +19,11 @@ const App  = () => {
       <Header/>
       <WelcomeMessage/>
       <MainContent/>
-      <Footer/> */}
+      <Footer/>
       <CreateList/>
       <UserList/>
-      <ProductList/>
+      <ProductList/> */}
+      <Props/>
     </div>
   )
 }
