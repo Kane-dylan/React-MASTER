@@ -3,9 +3,9 @@ import React from 'react'
 const WelcomeMessage = () => {
   return (
     <div>
-      <h>Hello, World!
+      <h1>Hello, World!
         <p>Welcome to learning JSX!</p>
-      </h>
+      </h1>
     </div>
   )
 }
