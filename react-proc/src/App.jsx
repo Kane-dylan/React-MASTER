@@ -21,7 +21,7 @@ const App = () => {
   const updateRatings = () => {
     const updatedMovies = {
       ...movies,
-      ratings: 8.2
+      ratings: 8.2 
     }
 
     setMovies(updatedMovies);
