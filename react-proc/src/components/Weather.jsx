@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const temp = 26
 
-const Weather = (props) => {
+const Weather = () => {
   if (temp < 15){
     return <h1>It's cold outside</h1>
   } else if (temp >=15 && temp <=25) {
