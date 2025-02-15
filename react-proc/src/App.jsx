@@ -1,36 +1,22 @@
 import React, { useState } from 'react'
+import ComponentOne from './components/ComponentOne'
+import ComponentTwo from './components/ComponentTwo'
+import ExampleOne from './components/ExampleOne'
+import ExampleTwo from './components/ExampleTwo'
+
 
 
 const App = () => {
-
-  const [movies, setMovies] = useState([
-    { id: 1,
-      title: "The Godfather",
-      ratings: 7.2
-    },
-    { id: 2, 
-      title: "The Shawshank Redemption",      
-      ratings: 8.6
-    },
-    { id: 3,
-      title: "Forrest Gump",
-      ratings: 4.3
-    },
-  ]);
-
-  const updateName = () => {
-    setMovies(
-      movies.map((m)=>(m.id === 2 ? {...movies, title: "John Wick 4"} : m))
-    )
-  }
   
+  const [count, setCount] = useState(0)
 
   return (
     <div>
-      {movies.map((m) => (
-        <li key={Math.random()}>{m.title}</li>
-      ))}
-      <button onClick={updateName}>Change Name</button>
+      <ComponentOne count={count} onClickHandler={() => setCount(count + 1)} />
+      <ComponentTwo count={count} onClickHandler={() => setCount(count - 1)} />
+
+        {/* <ExampleOne/> */}
+        <ExampleTwo/>
     </div>
   );
 }
