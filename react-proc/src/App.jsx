@@ -6,6 +6,8 @@ import ExampleTwo from './components/ExampleTwo'
 import ExampleThree from './components/ExampleThree'
 import Counter from './components/Counter'
 import TodoList from './components/TodoList'
+import Profile from './components/Profile'
+import ShoppingList from './components/ShoppingList'
 
 
 
@@ -21,8 +23,10 @@ const App = () => {
         {/* <ExampleOne/> */}
         {/* <ExampleTwo/> */}
         {/* <ExampleThree/> */}
-        <Counter/>
+        {/* <Counter/>
         <TodoList/>
+        <Profile/> */}
+        <ShoppingList/>
     </div>
   );
 }
